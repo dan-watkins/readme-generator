@@ -9,26 +9,12 @@ const generateREADME = ({
   license,
   username,
   email,
-}) => `# Repository
-${repository}
-## Title
-${title}
+}) => `# ${title}
 ## Description
-${description}
-## License
-${license}
-## Username
-${username}
-## Email
-${email}`;
+${description}`;
 
 // TODO: Create an array of questions for user input
 const questions = [
-  {
-    type: "input",
-    name: "repository",
-    message: "Please enter desired repository name",
-  },
   {
     type: "input",
     name: "title",
@@ -36,8 +22,33 @@ const questions = [
   },
   {
     type: "input",
+    name: "repository",
+    message: "Please enter desired repository name",
+  },
+  {
+    type: "input",
     name: "description",
     message: "Please provide description for your application",
+  },
+  {
+    type: "input",
+    name: "installation",
+    message: "Please provide installation instructions",
+  },
+  {
+    type: "input",
+    name: "usage",
+    message: "Please provide usage details",
+  },
+  {
+    type: "input",
+    name: "contribution",
+    message: "Please provide contribution details",
+  },
+  {
+    type: "input",
+    name: "tests",
+    message: "What tests are included?",
   },
   {
     type: "input",
