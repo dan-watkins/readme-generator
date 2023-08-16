@@ -1,19 +1,42 @@
-// TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 
 const generateREADME = ({
-  repository,
   title,
+  repository,
   description,
+  installation,
+  usage,
+  contribution,
+  tests,
   license,
   username,
   email,
 }) => `# ${title}
+## ${repository}
 ## Description
-${description}`;
+${description}
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribution](#contribution)
+- [Tests](#tests)
+- [License](#license)
+- [Contact](#contact)
+## Installation
+${installation}
+## Usage
+${usage}
+## Contribution
+${contribution}
+## Tests
+${tests}
+## License
+${license}
+## Contact
+You can reach me at ${email} and my GitHub user is ${username}
+`;
 
-// TODO: Create an array of questions for user input
 const questions = [
   {
     type: "input",
@@ -51,9 +74,18 @@ const questions = [
     message: "What tests are included?",
   },
   {
-    type: "input",
+    type: "list",
     name: "license",
     message: "Provide license if applicable",
+    choices: [
+      "MIT License",
+      "GNU Lesser General Public License 3.0",
+      "Mozilla Public License 2.0",
+      "GNU Affero General Public License v3.0",
+      "The Unlicense",
+      "Apache License 2.0",
+      "GNU General Public License v3.0",
+    ],
   },
   {
     type: "input",
@@ -74,11 +106,6 @@ inquirer.prompt(questions).then((answers) => {
   );
 });
 
-// TODO: Create a function to write README file
-// function writeToFile() {}
-
-// TODO: Create a function to initialize app
 function init() {}
 
-// Function call to initialize app
 init();
