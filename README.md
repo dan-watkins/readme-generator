@@ -1,23 +1,23 @@
 # README Generator
 ## readme-generator
 ## Description
-This application generates professional readmes
+This is a Command Line Interface (CLI) using Node.js to generate professional README files
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contribution](#contribution)
 - [Tests](#tests)
 - [License](#license)
-- [Contact](#contact)
+- [Questions](#questions)
 ## Installation
-This application requires inquirer, at least version 8.2.4
+Clone the repository, make sure to add your .gitignore for your dependencies, and be running node
 ## Usage
-CLI Tool. Go through the prompts to generate the responses for the README
+Enter a series of questions that will be used to programatically generate each section of your README
 ## Contribution
-Fork the repo and submit a PR
+See Questions section
 ## Tests
 None
 ## License
 MIT License
-## Contact
-You can reach me at danielwatkins@byu.net and my GitHub user is dan-watkins
+## Questions
+You can reach me at danielwatkins@byu.net or find me at https://github.com/dan-watkins

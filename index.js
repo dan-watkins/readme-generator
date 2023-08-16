@@ -22,7 +22,7 @@ ${description}
 - [Contribution](#contribution)
 - [Tests](#tests)
 - [License](#license)
-- [Contact](#contact)
+- [Questions](#questions)
 ## Installation
 ${installation}
 ## Usage
@@ -33,8 +33,8 @@ ${contribution}
 ${tests}
 ## License
 ${license}
-## Contact
-You can reach me at ${email} and my GitHub user is ${username}
+## Questions
+You can reach me at ${email} or find me at https://github.com/${username}
 `;
 
 const questions = [
