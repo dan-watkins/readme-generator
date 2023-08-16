@@ -1,6 +1,25 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+const generateBadge = (license) => {
+  switch (license) {
+    case "MIT License":
+      return `[![License: ${license}](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
+    case "GNU Lesser General Public License 3.0":
+      return `[![License: ${license}](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)`;
+    case "Mozilla Public License 2.0":
+      return `[![License: ${license}](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`;
+    case "GNU Affero General Public License v3.0":
+      return `[![License: ${license}](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)`;
+    case "The Unlicense":
+      return `[![License: ${license}](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`;
+    case "Apache License 2.0":
+      return `[![License: ${license}](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+    case "GNU General Public License v3.0":
+      return `[![License: ${license}](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
+  }
+};
+
 const generateREADME = ({
   title,
   repository,
@@ -13,6 +32,9 @@ const generateREADME = ({
   username,
   email,
 }) => `# ${title}
+
+${generateBadge(license)}
+
 ## ${repository}
 ## Description
 ${description}

@@ -1,4 +1,7 @@
 # README Generator
+
+[![License: Mozilla Public License 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+
 ## readme-generator
 ## Description
 This is a Command Line Interface (CLI) using Node.js to generate professional README files
@@ -18,6 +21,6 @@ See Questions section
 ## Tests
 None
 ## License
-MIT License
+Mozilla Public License 2.0
 ## Questions
 You can reach me at danielwatkins@byu.net or find me at https://github.com/dan-watkins
